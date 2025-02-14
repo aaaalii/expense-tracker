@@ -32,10 +32,10 @@ export default function Profile() {
             </div>
           </div>
           <Modal show={show} onHide={handleClose}>
-            <Modal.Header closeButton>
+            <Modal.Header closeButton className="bg-dark text-light">
               <Modal.Title>Edit Profile</Modal.Title>
             </Modal.Header>
-            <Modal.Body>
+            <Modal.Body className="bg-dark text-light">
               <Form
                 onSubmit={(e) => {
                   e.preventDefault();
@@ -49,6 +49,7 @@ export default function Profile() {
                 <Form.Group>
                   <Form.Label>Username</Form.Label>
                   <Form.Control
+                    className="bg-dark text-light"
                     type="text"
                     value={username}
                     onChange={(e) => setUsername(e.target.value)}
@@ -59,6 +60,7 @@ export default function Profile() {
                 <Form.Group>
                   <Form.Label>Currency</Form.Label>
                   <Form.Control
+                    className="bg-dark text-light"
                     type="text"
                     value={currency}
                     onChange={(e) => setCurrency(e.target.value)}

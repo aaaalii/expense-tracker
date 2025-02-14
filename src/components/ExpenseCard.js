@@ -7,8 +7,8 @@ export default function ExpenseCard() {
   const currency = useSelector((state) => state.user.currency);
   return (
     <>
-      <div className="expense-card bg-dark text-light rounded border w-50">
-        <div className="expense-card__header border-bottom p-2">
+      <div className="expense-card bg-dark text-light rounded border-custom w-50 ">
+        <div className="expense-card__header border-bottom-custom p-2">
           Recent Expenses
         </div>
         <div className="expense-card__body p-1 px-3">

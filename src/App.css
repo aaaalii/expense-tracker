@@ -13,6 +13,22 @@ body{
   height: 100dvh
 }
 
+.border-custom{
+  border: 1px solid rgb(73, 73, 73) !important;
+}
+
+.border-bottom-custom{
+  border-bottom: 1px solid rgb(73, 73, 73) !important;
+}
+
+.border-end-custom{
+  border-right: 1px solid rgb(73, 73, 73) !important;
+}
+
+.border-start-custom{
+  border-left: 1px solid rgb(73, 73, 73) !important;
+}
+
 .sidebar__container{
   width: 200px;
 }
@@ -36,4 +52,28 @@ body{
 
 .icon{
   cursor: pointer;
+}
+
+.alternate-row-table tbody tr:nth-child(odd) {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;}
+
+.alternate-row-table tbody tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.473);
+}
+
+.table-striped tbody tr:nth-child(odd) {
+  background-color: #454d55; /* Dark gray for odd rows */
+}
+
+.table-striped tbody tr:nth-child(even) {
+  background-color: #212529; /* Darker gray for even rows */
+}
+
+.table-striped tbody tr:hover {
+  background-color: #495057; /* Lighter gray on hover */
+}
+
+.table th, .table td {
+  border-color: #6c757d; /* Lighter borders for dark theme */
 }

@@ -47,8 +47,8 @@ export default function Home() {
             </div>
           ) : ('')
         }
-        <div className="bg-dark rounded border mt-4">
-          <div className="border-bottom p-2">Quick access</div>
+        <div className="bg-dark rounded border-custom mt-4">
+          <div className="border-bottom-custom p-2">Quick access</div>
           <div className="d-flex justify-content-around p-3">
             <div className="chart-bg d-flex p-3 rounded icon" onClick={() => {
               handleExpenseShow();
@@ -85,10 +85,10 @@ export default function Home() {
         </div>
         {
           (expense.length !== 0) ? (
-            <div className="bg-dark rounded border mt-4">
-              <div className="border-bottom p-2">Expense Graph</div>
+            <div className="bg-dark rounded border-custom mt-4">
+              <div className="border-bottom-custom p-2">Expense Graph</div>
               <div className="d-flex p-2">
-                <div className="border-end w-50 px-2">
+                <div className="border-end-custom w-50 px-2">
                   <div>Title</div>
                   <div style={{ height: "150px" }}>
                     <Chart data={Array.from(expense.values())} date={false} />
