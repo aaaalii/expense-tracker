@@ -1,0 +1,39 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.full-height{
+  height: 100dvh
+}
+
+.sidebar__container{
+  width: 200px;
+}
+
+.main{
+  background-color: black;
+  position: relative;
+  left: 200px;
+  width: calc(100dvw - 250px);
+}
+
+.chart-bg{
+  background-color: rgba(0, 0, 0, 0.473);
+}
+
+.sidebar__main__icon--active{
+  background-color: rgba(0, 0, 0, 0.473);
+  color: rgb(169, 104, 199);
+  border-radius: 10px;
+}
+
+.icon{
+  cursor: pointer;
+}
